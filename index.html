@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 10/28/2020 - Cool Submissions and Components HW - Carson Miller</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Syne+Tactile&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+
+  <!--  Title & description  -->
+  <h1>Cool Submissions and Components HW</h1>
+  <div class="description1">Input your name & email below. Name MUST contain <i>at least</i> 2 characters. Email MUST have proper email@domain.xx structuring.<br>Submission will occur <i>automatically</i> once formatting is complete properly.</div>
+
+  <!--  Input field stuff put inside of a div for center styling purposes  -->
+  <div class="inputStyler">
+    <input placeholder="Name..." v-model="name" /><br>
+    <input placeholder="Email..." v-model="email" />
+    <div class="whatLeft">{{whatLeft}}</div>
+    <div class="submit">{{submit}}</div>
+  </div>
+
+  <!--  Description 2  -->
+  <div class="description2">Click a character name below to flip to their codename!</div>
+
+  <!--  Character button stuff put inside of a div for center styling purposes  -->
+  <div class="buttonStyler">
+    <character v-for="item in list" v-bind:name="item.name" v-bind:cname="item.codename" v-bind:flipped="item.flipped"></character>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

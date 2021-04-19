@@ -1,0 +1,104 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  background-color: 247E7C;
+}
+
+/* Title & First Description Style */
+h1 {
+  left: 0px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 52px;
+  text-align: left;
+}
+
+.description1 {
+  margin-top: -30px;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Input Fields Styling */
+.inputStyler {
+  text-align: left;
+  padding: 20px;
+}
+
+input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: white;
+  border: 3px solid #4a87cb;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 50%;
+  box-sizing: border-box;
+  outline: 0;
+  box-shadow: 2px 2px 5px gray;
+}
+
+input:focus {
+  border: 3px solid #ff6c34;
+  box-shadow: 1.5px 1.5px 8px black;
+}
+
+.whatLeft {
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: red;
+}
+
+.submit {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  text-glow: 1px red;
+}
+
+/* Description 2 Style */
+.description2 {
+  margin-bottom: -10px;
+  margin-top: 100px;
+  padding-top: 15px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  border-top: 3px solid black;
+}
+
+/* Buttons Styling */
+button {
+  outline: none;
+  width: 300px;
+  height: 80px;
+  font-size: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 5px;
+  box-shadow: 1px 1px 4px gray;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+button:hover {
+  cursor: pointer;
+  border: #d4ffeb;
+  box-shadow: 2px 2px 6px black;
+  transition: 0.2s;
+}
+
+.backgroundFlip {
+  background-color: black;
+  color: white;
+  font-family: "Syne Tactile", cursive;
+}
+
+.buttonStyler {
+  padding: 20px;
+  position: flex-box;
+}
